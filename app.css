@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;
+    /* cursor: pointer; */
+
+}
+body{
+    background: #D0D0D0;
+    /* background-image: url('./image/banner.jpg');
+    background-blend-mode: multiply;
+    background-color: #393d3d; */
+
+}
+
+#wrapper {
+    /* kich thuoc man hinh 1280 x 720 */
+
+    width: 100%;
+    height: 100vh;
+    /* margin: 0; */
+    background-image: url('./image/banner.jpg');
+}
+
+#header {
+    width: 100%;
+    padding: 0px 30px;
+    /* margin-top: 15px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+#header .logo img{
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+
+}
+#menu  .item {
+    margin: 0px 25px;
+    width: 90px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#menu .item a{
+    color: #626A67;
+    text-decoration: none;
+    border-radius: 20px;
+
+}
+#menu .item:hover{
+    background: #e24040;
+}
+
+#actions{
+    display: flex;
+    
+}
+
+#actions .item{
+    margin-left: 22px;
+}
+
+#banner{
+    background-image: url('image/banner2.webp');
+    width: 100%;
+    height: 260px;
+    margin-top: 10px;
+    display: flex;
+    padding: 0px 30px;
+    /* position: relative; */
+    background-color: rgba(3, 3, 3, 0.5); /* Màu nền tối */
+    background-blend-mode: multiply;
+}
+
+#banner .box-left, #banner .box-right {
+    width: 50%;
+    /* color: #fff; */
+}
+
+#banner .box-left h2 {
+    font-size: 35px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#banner .box-left p{
+    color: #D0D0D0;
+
+}
+
+#banner .box-left button{
+    width: 110px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-size: 15px;
+    box-shadow: 0px 0px 25px #e46060;
+    border: none;
+    font-weight: bolder;
+    background: #1d1a1a;
+    color: #fff;
+    /* outline: none; */
+    transition: 0.4s;
+}
+
+#banner .box-left button:hover{
+    background: orange;
+    cursor: pointer;
+}
+
+#banner .box-right{
+    display: flex;
+    /* margin-left: 60px; */
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .box-right img{
+    position: relative;
+    width: 120px;
+    height: 180px;
+    margin: 0px 10px;
+    border-radius: 30px;
+    animation: animation 3s infinite linear;
+    box-shadow: 0px 0px 25px rgb(181, 94, 13);
+
+}
+
+#banner .box-right img:nth-child(1){
+    animation-delay: 0.5s;
+}
+#banner .box-right img:nth-child(2){
+    
+    animation-delay: 1s;
+}
+
+@keyframes animation {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+#wp-product{
+    /* width: 100%; */
+    margin-left: 25%;
+    padding: 30px;
+}
+
+#wp-product h2{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 8%;
+}
+
+#list-product{
+    display: grid;
+    grid-template-columns: 170px 170px 170px;
+    gap: 10px;
+    margin-top: 30px;
+    
+}
+
+#list-product .item-product{
+    background: #1d1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#list-product .item-product img{
+    width: 150px;
+    height: 160px;
+    
+}
+#list-product .item-product i{
+   border-radius: 50%;
+}
+
+#list-product .item-product i:hover{
+    background: red;
+}
+#list-product .item-product button{
+    /* margin-top: 5px; */
+    border-radius: 20px;
+    padding: 3px;
+    background-color: rgb(214, 200, 200);
+    /* color: #D0D0D0; */
+    border: none;
+    /* box-shadow: 0px 0px 25px red; */
+    
+}
+
+#list-product .item-product button:hover{
+    background: #9c4646;
+    box-shadow: 0px 0px 25px rgb(181, 94, 13);
+    cursor: pointer;
+
+}
+
+#list-product .item-product span{
+    color: #D0D0D0;
+    font-size: 15px;
+}
+
+#list-product .item-product p{
+    margin-top: 5px;
+    font-size: 13px;
+    color: red;
+}
+
+#sale-off{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+#sale-off .sale-left{
+    width: 40%;
+    background: #282929;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sale-off .sale-left h2{
+    font-size: 40px;
+    color: #D0D0D0;
+
+}
+
+#sale-off .sale-left span{
+    font-size: 90px;
+    color: #cb8d08;
+    font-weight: bolder;
+   
+}
+
+#sale-off .sale-right{
+    
+    width: 60%;
+}
+
+#sale-off .sale-right img{
+    width: 100%;
+    height: 300px;
+}
+
+#list-comment{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+
+
+#comment-body{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 310px;
+    overflow: hidden;
+    list-style: none;
+    margin-left: 29%;
+
+}
+
+#list-comment .comment{
+    width: 100%;
+    height: 100%;
+    background: #313634;
+    color: #D0D0D0;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#list-comment .comment .avatar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+#footer{
+    background-color: #313634;
+    width: 100%;
+    height: 300px;
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+}
+
+#footer .logo{
+    width: 30%;
+    height: 100%;
+    
+}
+
+#footer .logo img{
+    width: 180px;
+    height: 180px;
+    border-radius: 30%;
+    margin-bottom: 20px;
+    
+}
+
+#footer .logo span{
+    color: #D0D0D0;
+    font-size: 15px;
+}
+
+#footer .contact{
+    margin-top: 15px;
+    width: 45%;
+    color: #D0D0D0;
+    
+}
+
+#footer .feedback{
+    margin-top: 15px;
+
+}
+
+#footer .feedback button{
+    margin-top: 15px;
+    /* color: #D0D0D0; */
+    font-weight: bolder;
+    transition: 0.5s;
+}
+#footer .feedback h3{
+    color: #cb8d08;
+    margin-bottom: 30px;
+    
+} 
+
+#footer .feedback button:hover{
+    background: #cb8d08;
+    border: none;
+    cursor: pointer;
+
+}

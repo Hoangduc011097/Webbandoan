@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    
+    <div class="wrapp">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="./image/logo.jpg" alt="photo">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="">Liên hệ</a>
+                </div>
+            </div>
+
+            <div id="actions">
+                <div class="item">
+                    <a href="./userPage/user.html">
+                        <i class="fas fa-user-circle fa-lg"  style="color: #2a3646;"></i>
+                    </a>
+                </div>
+                <div style="display: flex;" id="cart-notify" class="item">
+                    <a href="./cartPage/cart.html">
+                    <i class="fas fa-cart-arrow-down fa-lg"></i>
+                    </a>
+                    <!-- <div style="border-radius: 50%; background-color: red;">1</div> -->
+                </div>
+            </div>
+            
+        </div>
+        <div id="banner">
+            <div class="box-left">
+                <h2>
+                <span>THỨC ĂN</span>
+                <br>    
+                <span>THUỢNG HẠNG</span>
+                </h2>
+                <p>Chuyên cung cấp các món ăn đảm bảo dinh dưỡng hợp
+                    vệ sinh đến người dùng, phục vụ người dùng 1
+                    cách hoàn hảo nhất
+                </p>
+                <button>MUA NGAY</button>
+            </div>
+            <div class="box-right">
+                <img src="./image/item banner1.jpg" alt="">
+                <img src="./image/item banner2.jpg" alt="">
+                <img src="./image/item banner3.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div id="wp-product">
+            <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+            <ul id="list-product">
+                <div class="item-product">
+                    <img  src="./image/item menu 2.jpg" alt="">
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <span>BEEFSTEAK</span>
+                <br>
+                <span>RARE</span>
+                <br>
+                <p>500.000</p>
+                <br>
+                <button onclick="addItem()">Thêm vào giỏ</button>
+             
+                </div>
+                <div class="item-product">
+                    <img  src="./image/item menu1.jpg" alt="">
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <span>BEEFSTEAK</span>
+                <br>
+                <span>MEDIUM RARE</span>
+                <br>
+                <p>500.000</p>
+                <br>
+                <button onclick="addItem()">Thêm vào giỏ</button>
+
+            </div>
+                <div class="item-product">
+                    <img  src="./image/item menu 3.jpg" alt="">
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <span>BEEFSTEAK</span>
+                <br>
+                <span>MEDIUM</span>
+                <br>
+                <p>500.000</p>
+                <br>
+                <button onclick="addItem()">Thêm vào giỏ</button>
+                    
+                </div>
+
+                <div class="item-product">
+                    <img  src="./image/item menu4.webp" alt="">
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <span>BEEFSTEAK</span>
+                <br>
+                <span>MEDIUM WELL</span>
+                <br>
+                <p>500.000</p>
+                <br>
+                <button onclick="addItem()">Thêm vào giỏ</button>
+
+                </div>
+
+                <div class="item-product">
+                    <img  src="./image/item meunu5.jpg" alt="">
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <span>BEEFSTEAK</span>
+                <br>
+                <span>WELL DONE</span>
+                <br>
+                <p>500.000</p>
+                <br>
+                <button onclick="addItem()">Thêm vào giỏ</button>
+
+            </div>
+
+                <div class="item-product">
+                    <img  src="./image/item menu6.jpg" alt="">
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <span>DESERT</span>
+                <br>
+                <span>PANCAKE</span>
+                <br>
+                <p>220.000</p>
+                <br>
+                <button onclick="addItem()">Thêm vào giỏ</button>
+                
+            </ul>
+            
+        </div>
+
+        <div id="sale-off">
+            <div class="sale-left">
+                <h2>GIẢM GIÁ LÊN ĐẾN </h2>
+                <br>
+                <span>45%</span>
+            </div>
+            <div class="sale-right">
+                <img src="./image/saleoff.jpg" alt="">
+            </div>
+        </div>
+
+            <h2 style="font-size: 40px; color: #373030 ; margin-top: 50px;"><center>NHẬN XÉT CỦA KHÁCH HÀNG</center></h2>
+
+        <div id="comment-body">
+            <!-- <h2>NHẬN XÉT CỦA KHÁCH HÀNG</h2> -->
+            <div class="prev">
+                <a  id="btn-prev" href="#">
+                    <i style="font-size: 40px; color: rgb(62, 65, 68);" class="fas fa-arrow-circle-left"></i>        
+                 </a>
+            </div>
+             <ul id="list-comment">
+            <li class="comment">
+                <div class="avatar">
+                    <img src="./image/avatar.jpeg" alt="">
+                </div>
+                <span class="name">HOANG HUU DUC</span>
+                <div class="context">
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                        itaque rem qui ipsam quibusdam maiores ipsa porro dicta eum fuga nemo,
+                        ea soluta, recusandae perspiciatis sed quidem laborum facere?</p>
+                </div>
+            </li>
+
+            <li class="comment">
+                <div class="avatar">
+                    <img src="./image/avatar.jpeg" alt="">
+                </div>
+                <span class="name">HOANG HUU DUC</span>
+                <div class="context">
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                         itaque rem qui ipsam quibusdam maiores ipsa porro dicta eum fuga nemo,
+                          ea soluta, recusandae perspiciatis sed quidem laborum facere?</p>
+                </div>
+            </li>
+
+            <li class="comment">
+                <div class="avatar">
+                    <img src="./image/avatar.jpeg" alt="">
+                </div>
+                <span class="name">HOANG HUU DUC</span>
+                <div class="context">
+                    <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                         itaque rem qui ipsam quibusdam maiores ipsa porro dicta eum fuga nemo,
+                          ea soluta, recusandae perspiciatis sed quidem laborum facere?</p>
+                </div>
+            </li>
+             </ul>
+            <div class="next">
+                <a  href="#">
+                    <i style="font-size: 40px;color: rgb(62, 65, 68);" class="fas fa-arrow-circle-right"></i>        
+                 </a>
+            </div>
+            
+        </div>
+
+        <div id="footer">
+            <div class="logo">
+                <img src="./image/logo.jpg" alt="">
+                <br>
+                <span>Luôn cung cấp sản phẩm chất lượng an toàn cho quý khách</span>
+            </div>
+            <div class="contact">
+                <h2>LIÊN HỆ</h2>
+                <br>
+                <span>Địa chỉ: Chung cư Kosmo Tây Hồ, Bắc Từ Liêm, Hà Nội</span>
+                <br>
+                <span>Số điện thoại: 0934235245 - 082342423</span>
+            </div>
+
+            <div class="feedback">
+                <h3>NHẬN CÁC ƯU ĐÃI MỚI NHẤT</h3>
+                <input type="email" placeholder="example@gmail.com">
+                <br>
+                <button>NHẬN THÔNG BÁO</button>
+            </div>
+        </div>
+    </div>
+
+<script src="./app.js"></script>
+</body>
+</html>
