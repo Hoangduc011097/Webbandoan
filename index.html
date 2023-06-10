@@ -77,13 +77,14 @@
                 <i class="fas fa-star" style="color: #e4f40b;"></i>
                 <i class="fas fa-star" style="color: #e4f40b;"></i>
                 <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <br>
                 <span>BEEFSTEAK</span>
                 <br>
-                <span>RARE</span>
+                <span class="type-food">RARE</span>
                 <br>
                 <p>500.000</p>
                 <br>
-                <button onclick="addItem()">Thêm vào giỏ</button>
+                <button class="btn-add" onclick="addItem()">Thêm vào giỏ</button>
              
                 </div>
                 <div class="item-product">
@@ -93,13 +94,14 @@
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <br>
                 <span>BEEFSTEAK</span>
                 <br>
-                <span>MEDIUM RARE</span>
+                <span class="type-food">MEDIUM RARE</span>
                 <br>
                 <p>500.000</p>
                 <br>
-                <button onclick="addItem()">Thêm vào giỏ</button>
+                <button class="btn-add" onclick="addItem()">Thêm vào giỏ</button>
 
             </div>
                 <div class="item-product">
@@ -109,13 +111,14 @@
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <br>
                 <span>BEEFSTEAK</span>
                 <br>
-                <span>MEDIUM</span>
+                <span class="type-food">MEDIUM</span>
                 <br>
                 <p>500.000</p>
                 <br>
-                <button onclick="addItem()">Thêm vào giỏ</button>
+                <button class="btn-add" onclick="addItem()">Thêm vào giỏ</button>
                     
                 </div>
 
@@ -126,13 +129,14 @@
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <br>
                 <span>BEEFSTEAK</span>
                 <br>
-                <span>MEDIUM WELL</span>
+                <span class="type-food">MEDIUM WELL</span>
                 <br>
                 <p>500.000</p>
                 <br>
-                <button onclick="addItem()">Thêm vào giỏ</button>
+                <button class="btn-add" onclick="addItem()">Thêm vào giỏ</button>
 
                 </div>
 
@@ -143,13 +147,14 @@
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
                     <i class="fas fa-star" style="color: #e4f40b;"></i>
+                    <br>
                 <span>BEEFSTEAK</span>
                 <br>
-                <span>WELL DONE</span>
+                <span class="type-food">WELL DONE</span>
                 <br>
                 <p>500.000</p>
                 <br>
-                <button onclick="addItem()">Thêm vào giỏ</button>
+                <button class="btn-add" onclick="addItem()">Thêm vào giỏ</button>
 
             </div>
 
@@ -160,13 +165,14 @@
                 <i class="fas fa-star" style="color: #e4f40b;"></i>
                 <i class="fas fa-star" style="color: #e4f40b;"></i>
                 <i class="fas fa-star" style="color: #e4f40b;"></i>
+                <br>
                 <span>DESERT</span>
                 <br>
-                <span>PANCAKE</span>
+                <span class="type-food">PANCAKE</span>
                 <br>
                 <p>220.000</p>
                 <br>
-                <button onclick="addItem()">Thêm vào giỏ</button>
+                <button class="btn-add" onclick="addItem()">Thêm vào giỏ</button>
                 
             </ul>
             
@@ -183,7 +189,7 @@
             </div>
         </div>
 
-            <h2 style="font-size: 40px; color: #373030 ; margin-top: 50px;"><center>NHẬN XÉT CỦA KHÁCH HÀNG</center></h2>
+            <h2 style="font-size: 40px; color: #373030 ; margin-top: 50px;margin-bottom: 50px;"><center>NHẬN XÉT CỦA KHÁCH HÀNG</center></h2>
 
         <div id="comment-body">
             <!-- <h2>NHẬN XÉT CỦA KHÁCH HÀNG</h2> -->
@@ -274,8 +280,31 @@
                 <button>NHẬN THÔNG BÁO</button>
             </div>
         </div>
+
+        <div id="cart-product">
+            <h2>Cart</h2>
+            <table class="item-cart">
+                <thead>
+                <tr>
+                    <td>Món ăn</td>
+                    <td>Giá</td>
+                    <td>Số lượng</td>
+                    <td>Lựa chọn</td>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+    
+            </table>
+
+            <div class="total" style="text-align: right;">
+                
+            </div>
+        </div>
     </div>
 
 <script src="./app.js"></script>
+<script src="./addToCart.js"></script>
 </body>
 </html>
