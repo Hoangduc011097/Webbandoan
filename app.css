@@ -93,6 +93,7 @@ body{
 #banner .box-left, #banner .box-right {
     width: 50%;
     /* color: #fff; */
+    box-sizing: border-box;
 }
 
 #banner .box-left h2 {
@@ -131,6 +132,7 @@ body{
     /* margin-left: 60px; */
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 #banner .box-right img{
