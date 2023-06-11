@@ -108,7 +108,9 @@ btnAdd.forEach(function (button) {
                     // console.log(cartItemDelete)
                     
                     cartItemDelete.remove();
-
+                    cartTotal()
+                    return;
+                    
         
                 })
             
