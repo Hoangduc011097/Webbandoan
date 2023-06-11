@@ -14,3 +14,8 @@ function viewContact (){
     const contact = document.getElementById('footer');
     contact.scrollIntoView({behavior: 'smooth'}); 
 }
+
+function viewHome(){
+    const home = document.getElementById('header');
+    home.scrollIntoView({behavior:'smooth'})
+}

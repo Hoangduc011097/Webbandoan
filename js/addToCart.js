@@ -58,9 +58,9 @@ btnAdd.forEach(function (button) {
         itemCart.appendChild(newItemCart);
         newItemCart.innerHTML = `<tr>
                                 <td style="display: flex; align-items: center;padding-top: 10px;"><img style="width:70px; height: 50px; border-radius: 10px;" src="${productImg}" alt="">${productName}</td>
-                                <td><span class = 'price-item'>${productPrice}<span></td>
-                                <td><input  id= 'number-product' style="width: 40px" type="number" value="1" min="1"></td>
-                                <td style="cursor: pointer;text-decoration: underline;"><span class='btn-delete'>Xóa</span></td>
+                                <td style="padding-top:10px"><span class = 'price-item'>${productPrice}<span></td>
+                                <td style="padding-top:10px"><input  id= 'number-product' style="width: 40px" type="number" value="1" min="1"></td>
+                                <td style="cursor: pointer;text-decoration: underline;padding-top:10px"><span class='btn-delete'>Xóa</span></td>
                             </tr>`
                             
         itemCart.appendChild(newItemCart);
