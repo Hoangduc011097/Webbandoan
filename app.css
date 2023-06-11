@@ -42,6 +42,13 @@ body{
     border-radius: 30%;
 
 }
+#menu-mobile{
+    display: none;
+}
+
+#selection{
+    display: none;
+}
 
 #menu {
     list-style: none;
@@ -56,15 +63,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #626A67;
+    cursor: pointer;
+
     
 }
 
-#menu .item a{
-    color: #626A67;
-    text-decoration: none;
-    border-radius: 20px;
 
-}
 #menu .item:hover{
     background: #e24040;
 }
@@ -73,6 +78,10 @@ body{
     display: flex;
     
 }
+/* #cart-notify{
+    position: fixed;
+    /* position: sticky; */
+/* } */ 
 
 #actions .item{
     margin-left: 22px;
@@ -391,12 +400,16 @@ body{
 #cart-product{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    width: 700px;
-   
+    width: 400px;
+    height: 100vh;
+    
+    top: 0;
     background-color: #427e7e;
-    /* padding: 10px; */
+    position:fixed;
+    overflow-y: scroll ;
+    right: -100%;
 }
 
 #cart-product h2{
@@ -418,3 +431,82 @@ body{
     margin-right: 70px;
 }
 
+#cart-product button{
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: #9c4646;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#cart-product button:hover{
+
+    box-shadow: 0px 0px 25px #ebdfdf;
+}
+#cart-product span{
+    cursor: pointer;
+}
+
+
+
+/* cho ip SE */
+@media (max-width:1024px) {
+    .box-right img{
+        display: none;
+    }
+    .box-left button{
+        display: none;
+    }
+    .box-left {
+        display: flex;   
+        justify-content: center;
+        align-items: center;
+    }
+    .box-left p{
+        margin-left: 20px;
+        height: 200px;
+    }
+
+    #banner{
+        right: 0;
+        width: 100%;
+        box-sizing: border-box;
+        /* bottom: 50px; */
+    }
+    #list-product{
+        display: grid;
+        grid-template-columns: 170px 170px;
+    }
+    #cart-notify{
+        right: 3%;
+        position: fixed;
+    }
+    #cart-notify i{
+        color: #e24040;
+    }
+    #actions .item{
+        display: none;
+    }
+    #selection{
+        display: block;
+        cursor: pointer;
+    }
+    #menu{
+        display: none;
+    }
+    #menu-mobile{
+        display: flex;
+        flex-direction: column;
+        right: -100%;
+        top: 0;
+        position: fixed;
+        background-blend-mode: multiply ;
+        background-color: #95aaaa;
+        width: 150px;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+}

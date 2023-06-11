@@ -18,16 +18,34 @@
             </a>
             <div id="menu">
                 <div class="item">
-                    <a href="">Trang chủ</a>
+                    Trang chủ
                 </div>
-                <div class="item">
-                    <a href="">Sản phẩm</a>
+                <div class="item" onclick="viewToProduct()">
+                    Sản phẩm
                 </div>
-                <div class="item">
-                    <a href="">Blog</a>
+                <div class="item" onclick="viewBlog ()">
+                    Blog
                 </div>
+                <div class="item" onclick="viewContact ()">
+                    Liên hệ
+                </div>
+            </div>
+            <div id="selection">
+                <i class="fas fa-outdent"></i>
+            </div>
+            <div id="menu-mobile">
+                <i id="close-selection" class="fas fa-times" style="cursor: pointer;"></i>
                 <div class="item">
-                    <a href="">Liên hệ</a>
+                    Trang chủ
+                </div>
+                <div class="item" onclick="viewToProduct()">
+                    Sản phẩm
+                </div>
+                <div class="item" onclick="viewBlog ()">
+                    Blog
+                </div>
+                <div class="item" onclick="viewContact ()">
+                    Liên hệ
                 </div>
             </div>
 
@@ -37,10 +55,8 @@
                         <i class="fas fa-user-circle fa-lg"  style="color: #2a3646;"></i>
                     </a>
                 </div>
-                <div style="display: flex;" id="cart-notify" class="item">
-                    <a href="./cartPage/cart.html">
-                    <i class="fas fa-cart-arrow-down fa-lg"></i>
-                    </a>
+                <div style="display: flex; cursor: pointer;" id="cart-notify" class="item">
+                    <i id="open-cart" class="fas fa-cart-arrow-down fa-lg"></i>
                     <!-- <div style="border-radius: 50%; background-color: red;">1</div> -->
                 </div>
             </div>
@@ -57,7 +73,7 @@
                     vệ sinh đến người dùng, phục vụ người dùng 1
                     cách hoàn hảo nhất
                 </p>
-                <button>MUA NGAY</button>
+                <button onclick="viewToProduct ()">MUA NGAY</button>
             </div>
             <div class="box-right">
                 <img src="./image/item banner1.jpg" alt="">
@@ -282,6 +298,7 @@
         </div>
 
         <div id="cart-product">
+            <span><i id="close-cart" class="fas fa-times"></i></span>
             <h2>Cart</h2>
             <table class="item-cart">
                 <thead>
@@ -301,11 +318,15 @@
             <div class="total" style="text-align: right;">
                 
             </div>
+            <button>ĐẶT HÀNG</button>
         </div>
     </div>
 
 <script src="./app.js"></script>
 <script src="./addToCart.js"></script>
 <script src="./deleteProduct.js"></script>
+<script src="./OpenandCloseCart.js"></script>
+<script src="./scroll.js"></script>
+<script src="./openSelection.js"></script>
 </body>
 </html>

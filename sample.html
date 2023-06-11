@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Ví dụ về CSS cho mục cần cuộn đến */
+    #target {
+      margin-top: 2000px;
+    }
+  </style>
+  <script>
+    function scrollToTarget() {
+      var targetElement = document.getElementById("target");
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+  <button onclick="scrollToTarget()">Cuộn xuống</button>
+
+  <!-- Mục cần cuộn đến -->
+  <div id="target">
+    Đây là mục cần cuộn đến.
+  </div>
+</body>
+</html>
